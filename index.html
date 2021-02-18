@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cargo Transport</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
     <link rel="stylesheet" href="./dist/app.css">
 </head>
@@ -27,16 +29,16 @@
 
                     <nav class="contact-nav">
 <!-- ?? flex non viene applicato al contenuto dinamico -->
-                        <!-- <ul v-for="item in headerContacts">
-                            <li>{{item}}</li>
+                        <!-- <ul>
+                            <li v-for="item in headerContacts">{{item}}</li>
                         </ul> -->
                         <ul>
                             <li>
-                                <i class="fas fa-phone-alt"></i>
+                                <i class="fas fa-phone-alt"></i> 
                                 {{headerContacts.tel}}
                             </li>
                             <li>
-                                <i class="fas fa-envelope"></i>
+                                <i class="fas fa-envelope"></i> 
                                 {{headerContacts.email}}
                             </li>
                             <li>
@@ -52,34 +54,42 @@
                     </nav>
                 </div>
             </div>
-
+            
+            <!-- .header-content -->
             <div class="header-content">
                 <div class="header-nav-container">
-                    <logo class="container">
-                        <img src="#" alt="logo">
+                    <!-- header logo -->
+                    <logo class="logo-container">
+                        <div class="logo">nexgen</div>
                     </logo>
-                    <nav class="header-nav">
-                        <ul v-for="item in headerContentNav">
-                            <li>{{item}}</li>
-                        </ul>
-                        <!-- <ul>
-                            <li>lorem</li>
-                            <li>lorem</li>
-                            <li>lorem</li>
-                            <li>lorem</li>
-                            <li>lorem</li>
-                        </ul> -->
-                    </nav>
 
+                    <!-- .header-nav -->
+                    <nav class="header-nav uppercase">
+                        <ul >
+                            <li v-for="item in headerContentNav">{{item}}</li>
+                            <li>
+                                <i class="far fa-user"></i>
+                            </li>
+                            <li>
+                                <button class="btn full inTouch"></button>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- .header-main (display:flex; j-c: flex-start) -->
+                <div class="header-main">
+                    <div class="description uppercase">logistic services</div>
+                    <h1 class="title uppercase">cargo<br>transport</h1>
+                    <p class="mission">Fractional or exclusive road cargo transportation to all 
+                       <br>regions with small, medium and large vehicles.</p>
+                    <button class="btn full inTouch"></button>
+                    <button class="btn empty">READ MORE</button>
                 </div>
 
             </div>
 
-            <!-- .header-content -->
-                <!-- .header-nav -->
-                    <!-- logo | ul (?? logo | ul v-for) -->
     
-                <!-- .header-main (display:flex; j-c: flex-start) -->
                     <!-- div.description -->
                     <!-- h1.title -->
                     <!-- p.mission -->

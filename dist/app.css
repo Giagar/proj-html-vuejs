@@ -10,7 +10,7 @@ content{max-w:, mg: auto} // one each section
 /* VAR & MIXINS */
 /* COMMON & UTILITIES */
 html {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
 }
 
@@ -20,18 +20,40 @@ html {
   padding: 0;
 }
 
-/* STYLE */
-header {
-  outline: 1px dotted lightblue;
+.btn {
+  padding: 9px 17px;
+  font-size: 0.8rem;
+  border-radius: 4px;
 }
 
+.btn.full {
+  color: white;
+  background-color: #028484;
+  border: 1px solid #028484;
+}
+
+.btn.empty {
+  color: white;
+  border: 1px solid #028484;
+  background-color: transparent;
+}
+
+.btn.inTouch::after {
+  content: "GET IN TOUCH";
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* STYLE */
 header .info-container {
   background-color: #21333E;
   color: #C0C3D1;
 }
 
 header .info-content {
-  width: 1440px;
+  width: 1000px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -62,15 +84,85 @@ header .header-content {
 }
 
 header .header-content .header-nav-container {
-  width: 1440px;
+  width: 1000px;
   margin: 0 auto;
   color: white;
   text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+}
+
+header .header-content .header-nav-container .logo-container {
+  display: flex;
+  align-items: center;
+}
+
+header .header-content .header-nav-container .logo-container .logo {
+  text-transform: uppercase;
+  height: 2.1em;
+  width: 8.8em;
+  line-height: 2.1em;
+  text-align: center;
+  letter-spacing: 0.3em;
+  font-weight: 600;
+  position: relative;
+  font-size: 1rem;
+}
+
+header .header-content .header-nav-container .logo-container .logo::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: #028484;
+  opacity: 0.5;
+  width: 4.2em;
+  height: 2.1em;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  bottom: 0;
+  left: 0;
 }
 
 header .header-content .header-nav-container .header-nav ul {
   list-style: none;
   display: flex;
   align-items: center;
+  font-size: 0.9rem;
+  font-weight: 500;
+  height: 70px;
+}
+
+header .header-content .header-nav-container .header-nav ul li {
+  margin-left: 30px;
+}
+
+header .header-content .header-main {
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 90px;
+}
+
+header .header-content .header-main .description {
+  color: #028484;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+header .header-content .header-main .title {
+  color: white;
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+header .header-content .header-main .mission {
+  color: #C0C3D1;
+  font-size: 0.9rem;
+  padding: 15px 0 30px;
+}
+
+header .header-content .header-main button.full {
+  margin-right: 15px;
 }
 

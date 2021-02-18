@@ -23,12 +23,16 @@ $background-light-color: white;
 $background-dark-primary-color: #121117; 
 $background-dark-secondary-color: #191C1E; // !! secondo me è #19191F
 
+// others
+$horizontal-nav-li-distance: 30px;
+
 // max width and centering of the content
 @mixin content-shrink {
-    width: 1440px;
+    width: 1000px;
     margin: 0 auto;
 }
 
+// ul: no style and flex
 @mixin horizontal-ul {
     list-style: none;
     display: flex;
@@ -38,7 +42,7 @@ $background-dark-secondary-color: #191C1E; // !! secondo me è #19191F
 
 /* COMMON & UTILITIES */
 html {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
 }
 
@@ -48,11 +52,37 @@ html {
     padding: 0;
 }
 
+.btn {
+    padding: 9px 17px;
+    font-size: 0.8rem;
+    border-radius: 4px;
+}
+
+.btn.full {
+    color: $primary-light-color;
+    background-color: $secondary-dark-color;
+    border: 1px solid $secondary-dark-color;
+}
+
+.btn.empty {
+    color: $primary-light-color;
+    border: 1px solid $secondary-dark-color;
+    background-color: transparent;
+}
+
+.btn.inTouch::after {
+    content: "GET IN TOUCH";
+    
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
 
 /* STYLE */
 // _header
 header {
-    outline: 1px dotted lightblue;
     
     .info-container {
         background-color: #21333E;
@@ -76,7 +106,7 @@ header {
                 height: 40px;
 
                 li {
-                    margin-left: 30px;
+                    margin-left: $horizontal-nav-li-distance;
                 }
             }
         }
@@ -93,12 +123,83 @@ header {
             @include content-shrink;
             color: $primary-light-color;
             text-transform: uppercase;
+            display: flex;
+            justify-content: space-between;
+            height: 70px;
+
+            .logo-container {
+                display: flex;
+                align-items: center;
+
+                // _LOGO
+                .logo {
+                    text-transform: uppercase;
+                    height: 2.1em;
+                    width: 8.8em;
+                    line-height: 2.1em;
+                    text-align: center;
+                    letter-spacing: 0.3em;
+                    font-weight: 600;
+                    position: relative;
+                    font-size: 1rem;
+                }
+
+                .logo::after {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    background-color: $secondary-dark-color;
+                    opacity: 0.5;
+                    width: 4.2em;
+                    height: 2.1em;
+                    border-top-left-radius: 50px;
+                    border-bottom-left-radius: 50px;
+                    bottom: 0;
+                    left: 0;
+                }
+                // _/LOGO
+            }
 
             .header-nav {
 
                 ul {
                     @include horizontal-ul;
+                    font-size: 0.9rem;
+                    font-weight: 500;
+                    height: 70px;
+
+                    li {
+                        margin-left: $horizontal-nav-li-distance;
+                    }
                 }
+            }
+        }
+
+        .header-main {
+            @include content-shrink;
+            margin-top: 90px;
+
+            .description {
+                color: $secondary-dark-color;
+                font-size: 0.8rem;
+                font-weight: 500;
+                margin-bottom: 10px;;
+            }
+
+            .title {
+                color: $primary-light-color;
+                font-size: 3rem;
+                font-weight: 900;
+            }
+
+            .mission {
+                color: $primary-dark-color;
+                font-size: 0.9rem;
+                padding: 15px 0 30px;
+            }
+
+            button.full {
+                margin-right: 15px;
             }
         }
 
