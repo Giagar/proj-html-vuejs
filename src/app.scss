@@ -42,7 +42,7 @@ $horizontal-nav-li-distance: 30px;
 
 /* COMMON & UTILITIES */
 html {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
 }
 
@@ -187,6 +187,7 @@ header {
             }
 
             .title {
+                font-family: 'Roboto', sans-serif;
                 color: $primary-light-color;
                 font-size: 3rem;
                 font-weight: 900;
