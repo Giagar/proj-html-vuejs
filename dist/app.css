@@ -1,1 +1,76 @@
+@charset "UTF-8";
+/* $var
+var: $primary-light-color: white, $primary-dark-color:grey, $secondary-light-color§:lightwatergreen, $secondary-dark-color:weatergreen
+var: $background-light-color, $background-dark-primary-color, $background-dark-secondary-color 
+var: $page-elements
+*/
+/* @mixin
+content{max-w:, mg: auto} // one each section
+*/
+/* VAR & MIXINS */
+/* COMMON & UTILITIES */
+html {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* STYLE */
+header {
+  outline: 1px dotted lightblue;
+}
+
+header .info-container {
+  background-color: #21333E;
+  color: #C0C3D1;
+}
+
+header .info-content {
+  width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+header .info-content .contact-nav {
+  width: 60%;
+}
+
+header .info-content .contact-nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 40px;
+}
+
+header .info-content .contact-nav ul li {
+  margin-left: 30px;
+}
+
+header .header-content {
+  height: 570px;
+  background: url("../img/bg-9.jpg") no-repeat center;
+  background-size: cover;
+}
+
+header .header-content .header-nav-container {
+  width: 1440px;
+  margin: 0 auto;
+  color: white;
+  text-transform: uppercase;
+}
+
+header .header-content .header-nav-container .header-nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
 

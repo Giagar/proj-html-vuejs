@@ -9,3 +9,102 @@ content{max-w:, mg: auto} // one each section
 */
 
 // font: montserrat (similar)
+
+/* VAR & MIXINS */
+// text and buttons
+$primary-light-color: white; 
+$primary-dark-color: #C0C3D1; // #69696D; 
+$secondary-light-color: #719a9c; 
+$secondary-dark-color: #028484;
+$complementary-secondary-dark-color: #FFFFFF;
+
+// layout
+$background-light-color: white; 
+$background-dark-primary-color: #121117; 
+$background-dark-secondary-color: #191C1E; // !! secondo me è #19191F
+
+// max width and centering of the content
+@mixin content-shrink {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+@mixin horizontal-ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+
+/* COMMON & UTILITIES */
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0;
+}
+
+
+/* STYLE */
+// _header
+header {
+    outline: 1px dotted lightblue;
+    
+    .info-container {
+        background-color: #21333E;
+        color: $primary-dark-color;
+    }
+    
+    // _info-content
+    .info-content {
+        @include content-shrink;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 0.8rem;
+        
+        .contact-nav {
+            width: 60%;
+
+            ul {
+                @include horizontal-ul;
+                justify-content: flex-end;
+                height: 40px;
+
+                li {
+                    margin-left: 30px;
+                }
+            }
+        }
+    }
+    // _/info-content
+
+    // _header-content
+    .header-content {
+        height: 570px;
+        background: url("../img/bg-9.jpg") no-repeat center;
+        background-size: cover;
+
+        .header-nav-container {
+            @include content-shrink;
+            color: $primary-light-color;
+            text-transform: uppercase;
+
+            .header-nav {
+
+                ul {
+                    @include horizontal-ul;
+                }
+            }
+        }
+
+    }
+    // _/header-content
+
+
+
+}
