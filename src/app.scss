@@ -1,5 +1,8 @@
 /* TO DO 
 _credits for gem font-awesome image
+_problems with images
+_space between certifications title and images
+_services icons
 */
 
 /* $var
@@ -45,12 +48,12 @@ $horizontal-nav-li-distance: 30px;
     align-items: center;
 }
 
-@mixin description-style {
-    color: $secondary-dark-color;
-    font-size: 0.8rem;
-    font-weight: 500;
-    margin-bottom: $space-between-section-elements;
-}
+// @mixin description-style {
+//     color: $secondary-dark-color;
+//     font-size: 0.8rem;
+//     font-weight: 500;
+//     margin-bottom: $space-between-section-elements;
+// }
 
 @mixin normal-text {
     color: $primary-dark-color;
@@ -70,22 +73,34 @@ html {
     padding: 0;
 }
 
+section {
+    padding: 90px 0;
+}
+
+.description-sentence {
+    color: $secondary-dark-color;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: $space-between-section-elements;
+    text-transform: uppercase;
+}
+
 h2.section-title {
     font-size: 2rem;
     font-weight: 800;
-    margin-bottom: $space-between-section-elements;
+    margin: 15px 0;
 }
 
 h3.subsection-title {
     font-size: 1rem;
     font-weight: 600;
-    margin-bottom: $space-between-section-elements;
 }
 
 .btn {
     padding: 9px 17px;
     font-size: 0.8rem;
     border-radius: 4px;
+    text-transform: uppercase;
 }
 
 .btn.full {
@@ -219,7 +234,7 @@ header {
             margin-top: 90px;
 
             .description {
-                @include description-style;
+                // @include description-style;
             }
 
             .title {
@@ -252,8 +267,8 @@ main {
 
     // _first-section
     .first-section {
-        padding: 90px 0;
         display: flex;
+        justify-content: space-between;
 
         // _left box
         .who.left-box {
@@ -265,7 +280,7 @@ main {
             // }
 
             .description {
-                @include description-style;
+                // @include description-style;
             }
 
             .text-container {
@@ -297,7 +312,6 @@ main {
 
         // _right-box
         .right-box {
-            margin-left: 50px;
 
             //_vehicles 
             .vehicles {
@@ -353,6 +367,84 @@ main {
                     }
                     
                 }
+            }
+        }
+
+    }
+
+    // _second-section
+    .second-section-container {
+        background-color: $background-dark-primary-color;
+        
+        .second-section {
+            @include content-shrink;
+
+            div.description {
+                // @include description-style;
+            }
+
+            h2.section-title {
+                color: $primary-light-color;
+
+                span {
+                    color: $primary-light-color;
+                    background-color: rgba(2, 132, 132, 0.3);
+                }
+            }
+
+            .text-container {
+                @include normal-text;
+                display: flex;
+                justify-content: space-between;
+
+                .services-text {
+                    width: 75%;
+                    margin-bottom: $space-between-section-elements;
+                }
+            }
+
+            .services-container {
+                display: flex;
+                justify-content: space-between;
+                padding: 15px 0;
+
+                .service {
+                    background-color: $background-dark-secondary-color;
+                    padding: 35px;
+                    border-radius: 6px;
+                    width: 32%;
+
+                    .img-container {
+                        display: flex;
+                        justify-content: space-between;
+                        margin-bottom: $space-between-section-elements;
+
+                        i:first-child {
+                            margin-bottom: $space-between-section-elements;
+                            height: 40px;
+                            width: 40px;
+                            background-color: rgba(2, 132, 132, 0.3);
+                            border-radius: 50%;
+                            color: $secondary-dark-color;
+
+                        }
+
+                        .arrow {
+                            color: $secondary-dark-color;
+                        }
+                    }
+
+                    .subsection-title {
+                        color: $primary-light-color;
+                        margin-bottom: $space-between-section-elements
+                    }
+
+                    .subsection-text {
+                        @include normal-text;
+                        color: $primary-dark-color;
+                    }
+                }
+
             }
         }
 

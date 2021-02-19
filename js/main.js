@@ -46,6 +46,26 @@ new Vue({
                 type: "",
                 path: "../img/certificate.png",
             },
+        ],
+
+        services: [
+            {
+                name: "Technology",
+                icon: "fas fa-truck-loading",
+                description: "We are continually focused on developing technology solutions adapted to our client's needs.",
+            },
+
+            {
+                name: "reefer cargo",
+                icon: "../img/",
+                description: "Regular and frequent monitoring from the receipt of the loaded container to final destination.",
+            }, 
+
+            {
+                name: "dry cargo",
+                icon: "../img/",
+                description: "We work with most types of dry cargo, from valuable cargo to the most dangerous requiring care.",
+            }, 
         ]
 
     },
