@@ -1,4 +1,7 @@
 @charset "UTF-8";
+/* TO DO 
+_credits for gem font-awesome image
+*/
 /* $var
 var: $primary-light-color: white, $primary-dark-color:grey, $secondary-light-color§:lightwatergreen, $secondary-dark-color:weatergreen
 var: $background-light-color, $background-dark-primary-color, $background-dark-secondary-color 
@@ -18,6 +21,18 @@ html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+h2.section-title {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+h3.subsection-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
 .btn {
@@ -44,6 +59,16 @@ html {
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.highlighted-text {
+  padding: 5px 10px;
+  background-color: #DAECED;
+  color: #028484;
 }
 
 /* STYLE */
@@ -165,5 +190,102 @@ header .header-content .header-main .mission {
 
 header .header-content .header-main button.full {
   margin-right: 15px;
+}
+
+main .first-section-container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+main .first-section {
+  padding: 90px 0;
+  display: flex;
+}
+
+main .first-section .who.left-box {
+  width: 60%;
+}
+
+main .first-section .who.left-box .description {
+  color: #028484;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+main .first-section .who.left-box .text-container p, main .first-section .who.left-box .text-container .quote {
+  color: #C0C3D1;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+main .first-section .who.left-box .text-container .quote {
+  padding: 10px 35px 10px 25px;
+  border-left: 3px solid #DAECED;
+  font-style: italic;
+}
+
+main .first-section .who.left-box .text-container ul {
+  color: #C0C3D1;
+  font-size: 0.9rem;
+  padding-left: 19px;
+}
+
+main .first-section .who.left-box .text-container ul li {
+  padding: 2px 0;
+}
+
+main .first-section .right-box {
+  margin-left: 50px;
+}
+
+main .first-section .right-box .vehicles ul {
+  list-style: none;
+}
+
+main .first-section .right-box .vehicles ul li {
+  border-bottom: 1px solid #C0C3D1;
+  display: flex;
+  padding: 15px 0 15px;
+}
+
+main .first-section .right-box .vehicles ul li img {
+  background-color: #DAECED;
+  width: 70px;
+  height: 35px;
+}
+
+main .first-section .right-box .vehicles ul li .container {
+  margin-left: 15px;
+}
+
+main .first-section .right-box .vehicles ul li .container h4 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+main .first-section .right-box .vehicles ul li .container .charateristics {
+  font-size: 0.8rem;
+  color: #C0C3D1;
+}
+
+main .first-section .right-box .vehicles ul li:last-child {
+  border-bottom: none;
+}
+
+main .first-section .right-box .certifications {
+  margin-top: 50px;
+}
+
+main .first-section .right-box .certifications .certifications-container {
+  display: flex;
+}
+
+main .first-section .right-box .certifications .certifications-container .img-container {
+  width: 100px;
+  height: 100px;
+  outline: 1px dotted lightblue;
+  margin-right: 15px;
+  box-shadow: 2px 2px 10px lightgrey;
 }
 

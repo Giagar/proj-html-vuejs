@@ -19,7 +19,7 @@ new Vue({
         vehicles: [
             {
                 type: "light",
-                img: "../",
+                img: "../img/truck-1.png",
                 load: 1200,
             },
 
@@ -37,7 +37,15 @@ new Vue({
         ],
 
         certifications: [
-            "../", "../"
+            {
+                type: "",
+                path: "../img/certificate.png",
+            },
+            
+            {
+                type: "",
+                path: "../img/certificate.png",
+            },
         ]
 
     },
