@@ -66,6 +66,33 @@ new Vue({
                 icon: "../img/",
                 description: "We work with most types of dry cargo, from valuable cargo to the most dangerous requiring care.",
             }, 
+        ],
+
+        procedures: [
+            {
+                name: "Collection of information",
+                description: "Lorem ipsum dolor sit, amet consectetur.",
+            },
+
+            {
+                name: "Service Invoice Sending",
+                description: "Lorem ipsum dolor sit, amet consectetur.",
+            },
+
+            {
+                name: "Withdrawal of Cargo",
+                description: "Lorem ipsum dolor sit, amet consectetur.",
+            },
+
+            {
+                name: "Transport Customer Order",
+                description: "Lorem ipsum dolor sit, amet consectetur.",
+            },
+
+            {
+                name: "Successful Delivery",
+                description: "Lorem ipsum dolor sit, amet consectetur.",
+            },
         ]
 
     },

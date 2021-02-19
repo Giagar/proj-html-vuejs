@@ -141,29 +141,20 @@
                     </div>
                 </section>
             </div>
-            
-            <!-- section.second -->
-                <!-- div.content -->
-                    <!-- h2.section-title -->
-                    <!-- div.container -->
-                        <!-- p | button -->
-
-                    <!-- div.services-container -->
-                        <!-- 3div.services -->
-                            <!-- div.img-container -->
-                                <!-- img | img.arrow -->
-                                <!-- h3 -->
-                                <!-- p -->
 
             <!-- second section -->
             <div class="second-section-container">
                 <section class="second-section">
+
+                    <!-- description and title -->
                     <div class="description-sentence">road transport</div>
                     <h2 class="section-title capitalize">main <span class="highlighted-text">services</span></h2>
                     <div class="text-container">
                         <p class="services-text">With all of this expertise and capability comes an unrivalles commitment to customer service. We will work hard to understand your needs in order to develop a productive, long term partnership.</p>
                         <button class="btn empty">see all</button>
                     </div>
+
+                    <!-- services -->
                     <div class="services-container">
                         <div class="service" v-for="service in services">
                             <div class="img-container">
@@ -177,6 +168,33 @@
 
                 </section>
             </div>
+
+            <!-- third section -->
+            <div class="third-section-container">
+                <div class="line"></div>
+                <section class="third-section">
+                    
+                    <!-- description -->
+                    <div class="description-container">
+                        <div class="description-sentence">how it works in practice</div>
+                        <h2 class="section-title capitalize"><span class="highlighted-text">logistical</span> procedure</h2>
+                        <p class="section-text">We work with innovative methodologies to ensure that the entire delivery process is done from start to finish as planned.</p>
+                    </div>
+                    
+                    <!-- procedures -->
+                    <div class="procedures-container">
+                        <div class="procedure" v-for="(procedure, index) in procedures">
+                            <div class="number-container">
+                                <span>0{{index + 1}}</span>
+                            </div>
+                            <h3 class="subsection-title">{{procedure.name}}</h3>
+                            <p class="subsection-text">{{procedure.description}}</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+
         </main>
 
 

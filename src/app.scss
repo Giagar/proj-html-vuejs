@@ -3,6 +3,7 @@ _credits for gem font-awesome image
 _problems with images
 _space between certifications title and images
 _services icons
+_change tag section in .section here in css and add section to html classes
 */
 
 /* $var
@@ -448,5 +449,74 @@ main {
             }
         }
 
+    }
+
+    .third-section-container {
+        background-color: #EFF4EE;
+        position: relative;
+        
+        .line {
+            position: absolute;
+            top: 266px;
+            z-index: 0;
+            height: 4px;
+            width: 100%;
+            background-color: $secondary-light-color;
+        }
+        
+        .third-section {
+            width: 1400px;
+            margin: 0 auto;
+            
+            .description-container {
+                width: 800px;
+                margin: 0 auto $space-between-section-elements;
+                text-align: center;
+
+                .section-text {
+                    @include normal-text;
+                }
+            }
+
+            .procedures-container {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 40px;
+
+                .procedure {
+                    width: 13%;
+                    text-align: center;
+
+                    .number-container {
+                        display: inline-block;
+                        position: relative;
+                        z-index: 1;
+                        height: 36px;
+                        width: 36px;
+                        background-color: $secondary-light-color;
+                        border-radius: 50%;
+                        line-height: 36px;
+                        text-align: center;
+                        font-size: 1rem;
+                        font-weight: 600;
+                        color: $secondary-dark-color;
+                    }
+                    
+                    .subsection-title {
+                        margin-top: $space-between-section-elements;
+                        margin-bottom: $space-between-section-elements;
+                        margin-right: auto;
+                        margin-left: auto;
+                    }
+
+                    .subsection-text {
+                        @include normal-text;
+                    }
+
+
+                }
+
+            }
+        }
     }
 }

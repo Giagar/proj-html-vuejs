@@ -3,6 +3,8 @@
 _credits for gem font-awesome image
 _problems with images
 _space between certifications title and images
+_services icons
+_change tag section in .section here in css and add section to html classes
 */
 /* $var
 var: $primary-light-color: white, $primary-dark-color:grey, $secondary-light-color§:lightwatergreen, $secondary-dark-color:weatergreen
@@ -356,5 +358,73 @@ main .second-section-container .second-section .services-container .service .sub
   color: #C0C3D1;
   font-size: 0.9rem;
   color: #C0C3D1;
+}
+
+main .third-section-container {
+  background-color: #EFF4EE;
+  position: relative;
+}
+
+main .third-section-container .line {
+  position: absolute;
+  top: 266px;
+  z-index: 0;
+  height: 4px;
+  width: 100%;
+  background-color: #DAECED;
+}
+
+main .third-section-container .third-section {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+main .third-section-container .third-section .description-container {
+  width: 800px;
+  margin: 0 auto 10px;
+  text-align: center;
+}
+
+main .third-section-container .third-section .description-container .section-text {
+  color: #C0C3D1;
+  font-size: 0.9rem;
+}
+
+main .third-section-container .third-section .procedures-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+main .third-section-container .third-section .procedures-container .procedure {
+  width: 13%;
+  text-align: center;
+}
+
+main .third-section-container .third-section .procedures-container .procedure .number-container {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  height: 36px;
+  width: 36px;
+  background-color: #DAECED;
+  border-radius: 50%;
+  line-height: 36px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #028484;
+}
+
+main .third-section-container .third-section .procedures-container .procedure .subsection-title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+main .third-section-container .third-section .procedures-container .procedure .subsection-text {
+  color: #C0C3D1;
+  font-size: 0.9rem;
 }
 
