@@ -16,5 +16,29 @@ new Vue({
 
         headerContentNav: ["home", "about", "services", "process", "testimonials"],
 
+        vehicles: [
+            {
+                type: "light",
+                img: "../",
+                load: 1200,
+            },
+
+            {
+                type: "medium",
+                img: "../",
+                load: 6000,
+            },
+
+            {
+                type: "heavy",
+                img: "../",
+                load: 24000,
+            },
+        ],
+
+        certifications: [
+            "../", "../"
+        ]
+
     },
 })

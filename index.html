@@ -89,22 +89,54 @@
         </header>
 
         <!-- main -->
-            <!-- section.first -->
-                <!-- div.who.left-box -->
-                    <!-- div.description -->
-                    <!-- h2.section-title -->
-                    <!-- 2p -->
-                    <!-- quote -->
-                    <!-- p -->
-                    <!-- ul -->
+        <main>
+            <!-- first section -->
+            <section class="first">
+                <!-- left-box -->
+                <div class="who left-box">
+                    <div class="description uppercase">who we are</div>
+                    <h2 class="section-title">Excellence in Transport</h2>
+                    <div class="text-container">
+                        <p class="first-text-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, officiis dolores. Quis corrupti officiis, atque ea cum esse reprehenderit rem porro, voluptates autem non, quod quos illo facilis id accusamus?</p>
+                        <p class="second-text--content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae assumenda nesciunt dolorum quis nam temporibus molestiae corporis incidunt voluptas, voluptates fuga voluptate, esse quisquam eaque repellat aspernatur architecto obcaecati ad.</p>
+                        <cite>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, minima libero nulla rem accusantium, officiis ipsa aliquid laudantium, pariatur sunt illo accusamus consequatur. Qui perspiciatis expedita officia quidem, laboriosam ad.</cite>
+                        <p class="third-text-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus dolore, sit deserunt accusantium harum rem tenetur exercitationem dignissimos aliquam saepe minus fugiat ipsum quibusdam dolorum. Odit hic nemo eligendi fugiat?</p>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>consectetur adipisicing elit</li>
+                            <li>Ducimus dolore, sit deserunt accusantium</li>
+                            <li>harum rem tenetur exercitationem</li>
+                            <li>dignissimos aliquam saepe minus fugiat</li>
+                        </ul>
+                    </div>
+                </div>
 
                 <!-- right-box -->
-                    <!-- div.vehicles -->
-                        <!-- ul -->
+                <div class="right-box capitalize">
+                    <!-- vehicles -->
+                    <div class="vehicles">
+                        <h3 class="subsection-title">Vehicle Types</h3>
+                        <ul>
+                            <li v-for="truck in vehicles">
+                                <img src="{{truck.img}}" alt="truck">
+                                <div class="container">
+                                    <h3>{{truck.type}}</h3>
+                                    <div class="characteriscs">Max Weight {{truck.load}} kg</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
 
-                    <!-- div.certifications -->
-                        <!-- 2img -->
-
+                    <!-- certifications -->
+                    <div class="certifications">
+                        <h3 class="subsection-title capitalize">Certifications</h3>
+                        <div v-for="certificate in certifications">
+                            <img src="{{certificate}}" alt="certificate">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
             <!-- section.second -->
                 <!-- div.content -->
                     <!-- h2.section-title -->
@@ -116,6 +148,10 @@
                                 <!-- img | img.arrow -->
                                 <!-- h3 -->
                                 <!-- p -->
+        </main>
+
+
+
                     
                     
                 
