@@ -25,13 +25,13 @@ new Vue({
 
             {
                 type: "medium",
-                img: "../",
+                img: "../img/truck-1.png",
                 load: 6000,
             },
 
             {
                 type: "heavy",
-                img: "../",
+                img: "../img/truck-1.png",
                 load: 24000,
             },
         ],
@@ -57,13 +57,13 @@ new Vue({
 
             {
                 name: "reefer cargo",
-                icon: "../img/",
+                icon: "fas fa-temperature-low",
                 description: "Regular and frequent monitoring from the receipt of the loaded container to final destination.",
             }, 
 
             {
                 name: "dry cargo",
-                icon: "../img/",
+                icon: "fas fa-boxes",
                 description: "We work with most types of dry cargo, from valuable cargo to the most dangerous requiring care.",
             }, 
         ],

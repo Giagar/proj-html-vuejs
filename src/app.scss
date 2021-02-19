@@ -1,9 +1,8 @@
 /* TO DO 
 _credits for gem font-awesome image
-_problems with images
 _space between certifications title and images
-_services icons
 _change tag section in .section here in css and add section to html classes
+_refactoring
 */
 
 /* $var
@@ -328,15 +327,20 @@ main {
                         img {
                             background-color: $secondary-light-color;
                             width: 70px;
-                            height: 35px;
+                            padding: 5px;
+                            // height: 35px;
                         }
 
                         .container {
                             margin-left: 15px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
 
                             h4 {
                                 font-size: 1rem;
                                 font-weight: 600;
+                                margin-bottom: 4px;
                             }
 
                             .charateristics {
@@ -362,9 +366,14 @@ main {
                     .img-container {
                         width: 100px;
                         height: 100px;
-                        outline: 1px dotted lightblue;
                         margin-right: 15px;
                         box-shadow: 2px 2px 10px lightgrey;
+                        padding-top: 3px;
+
+                        img {
+                            width: 100%;
+                            text-align: center;
+                        }
                     }
                     
                 }
@@ -420,14 +429,19 @@ main {
                         justify-content: space-between;
                         margin-bottom: $space-between-section-elements;
 
-                        i:first-child {
+                        .icon-circle {
+                            background-color: rgba(2, 132, 132, 0.3);
                             margin-bottom: $space-between-section-elements;
+                            border-radius: 50%;
                             height: 40px;
                             width: 40px;
-                            background-color: rgba(2, 132, 132, 0.3);
-                            border-radius: 50%;
-                            color: $secondary-dark-color;
+                            line-height: 40px;
+                            text-align: center;
 
+                            i:first-child {
+                                font-size: 20px;
+                                color: $secondary-dark-color;
+                            }
                         }
 
                         .arrow {

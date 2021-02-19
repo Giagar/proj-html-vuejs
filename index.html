@@ -120,7 +120,7 @@
                             <h3 class="subsection-title">Vehicle Types</h3>
                             <ul>
                                 <li v-for="truck in vehicles">
-                                    <img src="{{truck.img}}" alt="truck">
+                                    <img :src="truck.img" alt="truck">
                                     <div class="container">
                                         <h4>{{truck.type}}</h4>
                                         <div class="charateristics">Max Weight {{truck.load}} kg</div>
@@ -134,7 +134,7 @@
                             <h3 class="subsection-title capitalize">Certifications</h3>
                             <div class="certifications-container">
                                 <div v-for="certificate in certifications"  class="img-container">
-                                    <img src="{{certificate.path}}" alt="certificate">
+                                    <img :src="certificate.path" alt="certificate">
                                 </div>
                             </div>
                         </div>
@@ -158,7 +158,9 @@
                     <div class="services-container">
                         <div class="service" v-for="service in services">
                             <div class="img-container">
-                                <i class="{{service.icon}}" alt="service"></i>
+                                <div class="icon-circle">
+                                    <i :class="service.icon" alt="service"></i>
+                                </div>
                                 <i class="fas fa-arrow-right arrow"></i>
                             </div>
                             <h3 class="subsection-title capitalize">{{service.name}}</h3>
