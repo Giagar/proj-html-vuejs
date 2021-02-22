@@ -196,6 +196,22 @@
                 </section>
             </div>
 
+            <div class="fourth-section-container">
+                <section class="fourth-section">
+                    <div class="description-sentence">what are we doing</div>
+                    <h2 class="section-title"><span class="highlighted-onlyBackground-text">Results</span> in Numbers</h2>
+                    <div class="results-container">
+                        <ul>
+                            <li v-for="result in results">
+                                <div class="number">{{result.number}}</div>
+                                <h3 class="description capitalize subsection-title">{{result.description}}</h3>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+            </div>
+
 
         </main>
 

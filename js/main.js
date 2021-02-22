@@ -93,7 +93,30 @@ new Vue({
                 name: "Successful Delivery",
                 description: "Lorem ipsum dolor sit, amet consectetur.",
             },
-        ]
+        ], 
+
+        results: [
+            {
+                number: 128,
+                description: "certifications",
+            },
+            
+            {
+                number: 230,
+                description: "employees",
+            },
+            
+            {
+                number: 517,
+                description: "customers",
+            },
+            
+            {
+                number: 94,
+                description: "countries served",
+            },
+
+        ],
 
     },
 })
