@@ -124,6 +124,18 @@ new Vue({
                 description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta accusamus odit numquam dolorem delectus animi est.",
                 quote: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             },
+            
+            {
+                logo: "../img/logo-2.png",
+                description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta accusamus odit numquam dolorem delectus animi est.",
+                quote: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+            },
+
+            {
+                logo: "../img/logo-3.png",
+                description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta accusamus odit numquam dolorem delectus animi est.",
+                quote: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+            },
         ],
 
     },

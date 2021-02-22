@@ -615,12 +615,13 @@ main {
                     width: 32%;
 
                     .img-container {
-                        outline: 1px dotted lightblue;
                         margin-bottom: $space-between-section-elements;
-
-                        img {
+                        width: 100px;
+                        
+                        img.feed-logo {
                             width: 100%;
                             color: $primary-light-color;
+                            filter: invert(100%);
                         }
                     }
 
