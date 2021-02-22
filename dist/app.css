@@ -119,6 +119,10 @@ h3.subsection-title {
 }
 
 /* STYLE */
+.wrapper {
+  min-width: 1400px;
+}
+
 header .info-container {
   background-color: #21333E;
   color: #C0C3D1;
@@ -750,18 +754,19 @@ footer .footer-bottom-container .footer-bottom .copyright span {
 
 footer .footer-bottom-container .footer-bottom .goTop {
   position: absolute;
-  right: 10px;
+  right: 20px;
   width: 36px;
   height: 36px;
   line-height: 36px;
   text-align: center;
   border-radius: 50%;
-  background-color: #191C1E;
+  background-color: #29292D;
   top: 50%;
   transform: translateY(-50%);
 }
 
 footer .footer-bottom-container .footer-bottom .goTop i {
   font-size: 1rem;
+  color: #0B1B1F;
 }
 
