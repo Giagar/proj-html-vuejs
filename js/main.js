@@ -162,7 +162,25 @@ new Vue({
                     ]
                 }
             ]
-        }
+        },
+
+        contacts: [
+            {
+                icon: "fas fa-phone-alt",
+                content: "+1 (305) 1234-5678",
+            },
+
+            {
+                icon: "fas fa-envelope",
+                content: "hello@example.com",            
+            },
+
+            {
+                icon: "fas fa-map-marker-alt",
+                content: "Main Avenue, 987",                       
+            },
+
+        ]
 
     },
 })

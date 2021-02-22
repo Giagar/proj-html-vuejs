@@ -59,9 +59,9 @@
                     
                     <div class="header-nav-container">
                         <!-- header logo -->
-                        <logo class="logo-container">
+                        <div class="logo-container">
                             <div class="logo">nexgen</div>
-                        </logo>
+                        </div>
 
                         <!-- .header-nav -->
                         <nav class="header-nav uppercase">
@@ -296,17 +296,37 @@
             </div>
 
             <!-- footer -->
-            
-            
-                <!-- footer -->
-                    <!-- div.footer-top.section -->
-                        <!-- 4 div.subsection -->
-                            <!-- h3.subsection-title -->
-
             <footer>
                 <div class="footer-top section">
-                    <div class="card">first-card</div>
 
+                    <!-- first card -->
+                    <div class="card">
+                        <!-- logo -->
+                        <div class="logo-container">
+                            <div class="logo">nexgen</div>
+                        </div>
+
+                            <!-- description -->
+                            <p class="description">A Functional HTML Template for Corporate & Business.</p>
+                            
+                            <!-- contacts -->
+                            <ul class="contacts">
+                                <li v-for="contact in contacts">
+                                    <!-- logo -->
+                                    <div class="icon-container">
+                                        <i :class="contact.icon"></i>
+                                    </div>
+                                    <span class="address">{{contact.content}}</span>
+                                </li>
+                            </ul>
+
+                            <!-- button -->
+                            <div class="button-container">
+                                <button class="btn inTouch empty"></button>
+                            </div>
+                    </div>
+
+                    <!-- other cards (from data) -->
                     <div class="card" v-for="card in footer.cards">
                         <h3 class="subsection-title">{{card.title}}</h3>
                         <ul>

@@ -92,6 +92,32 @@ h3.subsection-title {
   background-color: rgba(2, 132, 132, 0.3);
 }
 
+.logo {
+  text-transform: uppercase;
+  height: 2.1em;
+  width: 8.8em;
+  line-height: 2.1em;
+  text-align: center;
+  letter-spacing: 0.3em;
+  font-weight: 600;
+  position: relative;
+  font-size: 1rem;
+}
+
+.logo::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: #41c457;
+  opacity: 0.5;
+  width: 4.2em;
+  height: 2.1em;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  bottom: 0;
+  left: 0;
+}
+
 /* STYLE */
 header .info-container {
   background-color: #21333E;
@@ -149,32 +175,6 @@ header .header-content .header-nav-container {
 header .header-content .header-nav-container .logo-container {
   display: flex;
   align-items: center;
-}
-
-header .header-content .header-nav-container .logo-container .logo {
-  text-transform: uppercase;
-  height: 2.1em;
-  width: 8.8em;
-  line-height: 2.1em;
-  text-align: center;
-  letter-spacing: 0.3em;
-  font-weight: 600;
-  position: relative;
-  font-size: 1rem;
-}
-
-header .header-content .header-nav-container .logo-container .logo::after {
-  content: "";
-  display: block;
-  position: absolute;
-  background-color: #41c457;
-  opacity: 0.5;
-  width: 4.2em;
-  height: 2.1em;
-  border-top-left-radius: 50px;
-  border-bottom-left-radius: 50px;
-  bottom: 0;
-  left: 0;
 }
 
 header .header-content .header-nav-container .header-nav ul {
@@ -672,26 +672,59 @@ main footer .footer-top {
 
 main footer .footer-top .card {
   width: 22%;
+}
+
+main footer .footer-top .card:first-child {
+  color: #C0C3D1;
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main footer .footer-top .card:first-child .description {
+  margin-top: 20px;
+}
+
+main footer .footer-top .card:first-child ul {
+  list-style: none;
+  margin: 20px 0;
+}
+
+main footer .footer-top .card:first-child ul li {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+main footer .footer-top .card:first-child ul li i {
+  margin-right: 10px;
+}
+
+main footer .footer-top .card:first-child ul li:last-child {
+  margin-bottom: 0;
+}
+
+main footer .footer-top .card:not(:first-child) {
   padding: 35px;
   background-color: #191C1E;
   border-radius: 6px;
 }
 
-main footer .footer-top .card .subsection-title {
+main footer .footer-top .card:not(:first-child) .subsection-title {
   margin-bottom: 10px;
 }
 
-main footer .footer-top .card ul {
+main footer .footer-top .card:not(:first-child) ul {
   list-style: none;
 }
 
-main footer .footer-top .card ul li {
+main footer .footer-top .card:not(:first-child) ul li {
   color: #C0C3D1;
   font-size: 0.9rem;
   margin-bottom: 10px;
 }
 
-main footer .footer-top .card ul li:last-child {
+main footer .footer-top .card:not(:first-child) ul li:last-child {
   margin-bottom: 0;
 }
 

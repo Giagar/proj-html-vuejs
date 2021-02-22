@@ -140,6 +140,34 @@ h3.subsection-title {
     background-color: $secondary-dark-color;
 }
 
+// _LOGO
+.logo {
+    text-transform: uppercase;
+    height: 2.1em;
+    width: 8.8em;
+    line-height: 2.1em;
+    text-align: center;
+    letter-spacing: 0.3em;
+    font-weight: 600;
+    position: relative;
+    font-size: 1rem;
+}
+
+.logo::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: $secondary-mid-color;
+    opacity: 0.5;
+    width: 4.2em;
+    height: 2.1em;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    bottom: 0;
+    left: 0;
+}
+// _/LOGO
+
 
 /* STYLE */
 // _header
@@ -203,33 +231,33 @@ header {
                 display: flex;
                 align-items: center;
 
-                // _LOGO
-                .logo {
-                    text-transform: uppercase;
-                    height: 2.1em;
-                    width: 8.8em;
-                    line-height: 2.1em;
-                    text-align: center;
-                    letter-spacing: 0.3em;
-                    font-weight: 600;
-                    position: relative;
-                    font-size: 1rem;
-                }
+                // // _LOGO
+                // .logo {
+                //     text-transform: uppercase;
+                //     height: 2.1em;
+                //     width: 8.8em;
+                //     line-height: 2.1em;
+                //     text-align: center;
+                //     letter-spacing: 0.3em;
+                //     font-weight: 600;
+                //     position: relative;
+                //     font-size: 1rem;
+                // }
 
-                .logo::after {
-                    content: "";
-                    display: block;
-                    position: absolute;
-                    background-color: $secondary-mid-color;
-                    opacity: 0.5;
-                    width: 4.2em;
-                    height: 2.1em;
-                    border-top-left-radius: 50px;
-                    border-bottom-left-radius: 50px;
-                    bottom: 0;
-                    left: 0;
-                }
-                // _/LOGO
+                // .logo::after {
+                //     content: "";
+                //     display: block;
+                //     position: absolute;
+                //     background-color: $secondary-mid-color;
+                //     opacity: 0.5;
+                //     width: 4.2em;
+                //     height: 2.1em;
+                //     border-top-left-radius: 50px;
+                //     border-bottom-left-radius: 50px;
+                //     bottom: 0;
+                //     left: 0;
+                // }
+                // // _/LOGO
             }
 
             .header-nav {
@@ -764,6 +792,39 @@ main {
 
             .card {
                 width: 22%;
+            }
+
+            .card:first-child {
+                @include normal-text;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                .description {
+                    margin-top: 20px;
+                }
+
+                ul {
+                    list-style: none;
+                    margin: 20px 0;
+
+                    li {
+                        display: flex;
+                        margin-bottom: $space-between-section-elements;
+
+                        i {
+                            margin-right: $space-between-section-elements;
+                        }
+                    }
+
+                    li:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+
+            }
+
+            .card:not(:first-child) {
                 padding: 35px;
                 background-color: $background-dark-secondary-color;
                 border-radius: 6px;
@@ -785,6 +846,8 @@ main {
                     }
                 }
             }
+
+            
         }
 
     }
