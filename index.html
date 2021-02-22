@@ -148,7 +148,7 @@
 
                     <!-- description and title -->
                     <div class="description-sentence">road transport</div>
-                    <h2 class="section-title capitalize">main <span class="highlighted-text">services</span></h2>
+                    <h2 class="section-title capitalize">main <span class="highlighted-onlyBackground-text">services</span></h2>
                     <div class="text-container">
                         <p class="services-text">With all of this expertise and capability comes an unrivalles commitment to customer service. We will work hard to understand your needs in order to develop a productive, long term partnership.</p>
                         <button class="btn empty">see all</button>
@@ -196,6 +196,7 @@
                 </section>
             </div>
 
+            <!-- fourth-section -->
             <div class="fourth-section-container">
                 <section class="fourth-section">
                     <div class="description-sentence">what are we doing</div>
@@ -209,7 +210,32 @@
                         </ul>
                     </div>
                 </section>
+            </div>
 
+            <!-- fifth-section -->
+            <div class="fifth-section-container">
+                <section class="fifth-section">
+
+                    <!-- description and title -->
+                    <div class="description-sentence">customer testimonials</div>
+                    <h2 class="section-title capitalize">Trusted <span class="highlighted-onlyBackground-text">Feedback</span></h2>
+                    <p class="description-text">We work intensively in search of ideals that can add up in the lives of our customers. This is what move us and we are grateful for the recognition.</p>
+
+                    <!-- services -->
+                    <div class="feedback-container">
+                        <div class="feed" v-for="feed in feedback">
+                            <div class="img-container">
+                                <img class="feed-logo" :src="feed.logo" alt="feed logo"></i>
+                            </div>
+                            <p class="subsection-text main">{{feed.description}}</p>
+                            <p class="subsection-text quote">{{feed.quote}}</p>
+                            <div class="quote-container">
+                                <i class="fas fa-quote-right quote-symbol"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
             </div>
 
 

@@ -314,11 +314,6 @@ main .second-section-container .second-section h2.section-title {
   color: white;
 }
 
-main .second-section-container .second-section h2.section-title span {
-  color: white;
-  background-color: rgba(2, 132, 132, 0.3);
-}
-
 main .second-section-container .second-section .text-container {
   color: #C0C3D1;
   font-size: 0.9rem;
@@ -487,5 +482,71 @@ main .fourth-section-container .fourth-section .results-container ul li .number 
 
 main .fourth-section-container .fourth-section .results-container ul li .subsection-title {
   color: white;
+}
+
+main .fifth-section-container {
+  background-color: #121117;
+}
+
+main .fifth-section-container .fifth-section {
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+main .fifth-section-container .fifth-section h2.section-title {
+  color: white;
+}
+
+main .fifth-section-container .fifth-section .description-text {
+  color: #C0C3D1;
+  font-size: 0.9rem;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+main .fifth-section-container .fifth-section .feedback-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+
+main .fifth-section-container .fifth-section .feedback-container .feed {
+  background-color: #191C1E;
+  padding: 35px;
+  border-radius: 6px;
+  width: 32%;
+}
+
+main .fifth-section-container .fifth-section .feedback-container .feed .img-container {
+  outline: 1px dotted lightblue;
+  margin-bottom: 10px;
+  color: white;
+}
+
+main .fifth-section-container .fifth-section .feedback-container .feed .img-container img {
+  width: 100%;
+  color: white;
+}
+
+main .fifth-section-container .fifth-section .feedback-container .feed .subsection-text {
+  color: #C0C3D1;
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+main .fifth-section-container .fifth-section .feedback-container .feed .quote {
+  margin-top: 5px;
+}
+
+main .fifth-section-container .fifth-section .feedback-container .feed .quote-container {
+  text-align: right;
+}
+
+main .fifth-section-container .fifth-section .feedback-container .feed .quote-container .quote-symbol {
+  color: #47474C;
+  font-size: 1.2rem;
 }
 

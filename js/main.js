@@ -118,5 +118,13 @@ new Vue({
 
         ],
 
+        feedback: [
+            {
+                logo: "../img/logo-1.png",
+                description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta accusamus odit numquam dolorem delectus animi est.",
+                quote: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+            },
+        ],
+
     },
 })

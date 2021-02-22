@@ -403,10 +403,10 @@ main {
             h2.section-title {
                 color: $primary-light-color;
 
-                span {
-                    color: $primary-light-color;
-                    background-color: $secondary-dark-color;
-                }
+                // span {
+                //     color: $primary-light-color;
+                //     background-color: $secondary-dark-color;
+                // }
             }
 
             .text-container {
@@ -581,5 +581,72 @@ main {
 
 
         }
+    }
+
+    // _fifth-section
+    .fifth-section-container {
+        background-color: $background-dark-primary-color;
+        
+        .fifth-section {
+            @include content-shrink;
+            text-align: center;
+
+            h2.section-title {
+                color: $primary-light-color;
+            }
+
+            .description-text {
+                @include normal-text;
+                width: 700px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: $space-between-section-elements;
+            }
+
+            .feedback-container {
+                display: flex;
+                justify-content: space-between;
+                padding: 15px 0;
+
+                .feed {
+                    background-color: $background-dark-secondary-color;
+                    padding: 35px;
+                    border-radius: 6px;
+                    width: 32%;
+
+                    .img-container {
+                        outline: 1px dotted lightblue;
+                        margin-bottom: $space-between-section-elements;
+
+                        img {
+                            width: 100%;
+                            color: $primary-light-color;
+                        }
+                    }
+
+                    .subsection-text {
+                        @include normal-text;
+                        text-align: left;
+                        // color: $primary-dark-color;
+                    }
+
+                    .quote {
+                        margin-top: 5px;
+                    }
+
+                    .quote-container {
+                        text-align: right;
+
+                        .quote-symbol {
+                            color: #47474C;
+                            font-size: 1.2rem;
+                        }
+                    }
+
+                }
+
+            }
+        }
+
     }
 }
