@@ -27,7 +27,7 @@ html {
   padding: 0;
 }
 
-section {
+section, .section {
   padding: 90px 0;
 }
 
@@ -618,6 +618,7 @@ main .sixth-section-container .sixth-section .left-box form textarea {
   margin-bottom: 20px;
   background-color: #ECECEC;
   border: none;
+  resize: none;
 }
 
 main .sixth-section-container .sixth-section .left-box form input[type="submit"] {
@@ -655,5 +656,42 @@ main .sixth-section-container .sixth-section .right-box .contacts-container .ico
 main .sixth-section-container .sixth-section .right-box button.map {
   margin-top: 10px;
   color: #41c457;
+}
+
+main footer {
+  background-color: #121117;
+  color: white;
+}
+
+main footer .footer-top {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+main footer .footer-top .card {
+  width: 22%;
+  padding: 35px;
+  background-color: #191C1E;
+  border-radius: 6px;
+}
+
+main footer .footer-top .card .subsection-title {
+  margin-bottom: 10px;
+}
+
+main footer .footer-top .card ul {
+  list-style: none;
+}
+
+main footer .footer-top .card ul li {
+  color: #C0C3D1;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+main footer .footer-top .card ul li:last-child {
+  margin-bottom: 0;
 }
 

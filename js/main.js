@@ -139,5 +139,30 @@ new Vue({
             },
         ],
 
+        footer: {
+            cards: [
+                {
+                    title: "About",
+                    elements: [
+                        "The Company", "Institutional", "Social & Events", "Innovation", "Environment", "Technology"
+                    ]
+                },
+
+                {
+                    title: "Transport",
+                    elements: [
+                        "Industrialized", "Chemicals", "Packaged Liquids", "Construction", "Laminated Wood", "And others"
+                    ]
+                },
+
+                {
+                    title: "Support",
+                    elements: [
+                        "Responsibility", "Terms of Use", "About Cookies", "Privacy Policy", "Accessibility", "Information"
+                    ]
+                }
+            ]
+        }
+
     },
 })

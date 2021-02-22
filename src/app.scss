@@ -75,7 +75,7 @@ html {
     padding: 0;
 }
 
-section {
+section, .section {
     padding: 90px 0;
 }
 
@@ -705,6 +705,7 @@ main {
                         margin-bottom: 20px;
                         background-color: #ECECEC;
                         border: none;
+                        resize: none;
                     }
 
                     input[type="submit"] {
@@ -750,5 +751,41 @@ main {
             }
 
         }
+    }
+
+    footer {
+        background-color: $background-dark-primary-color;
+        color: white;
+
+        .footer-top {
+            @include content-shrink;
+            display: flex;
+            justify-content: space-between;
+
+            .card {
+                width: 22%;
+                padding: 35px;
+                background-color: $background-dark-secondary-color;
+                border-radius: 6px;
+
+                .subsection-title {
+                    margin-bottom: $space-between-section-elements;
+                }
+                
+                ul {
+                    list-style: none;
+                    
+                    li {
+                        @include normal-text;
+                        margin-bottom: $space-between-section-elements;
+                    }
+
+                    li:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+
     }
 }
