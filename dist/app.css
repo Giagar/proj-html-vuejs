@@ -557,3 +557,77 @@ main .fifth-section-container .fifth-section .feedback-container .feed .quote-co
   font-size: 1.2rem;
 }
 
+main .sixth-section-container .sixth-section {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  outline: 1px dotted lightblue;
+}
+
+main .sixth-section-container .sixth-section .left-box {
+  width: 60%;
+  outline: 1px dotted lightblue;
+}
+
+main .sixth-section-container .sixth-section .left-box .section-description {
+  color: #C0C3D1;
+  font-size: 0.9rem;
+  margin-bottom: 40px;
+}
+
+main .sixth-section-container .sixth-section .left-box form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+main .sixth-section-container .sixth-section .left-box form input:not([type="submit"]), main .sixth-section-container .sixth-section .left-box form select {
+  color: #C0C3D1;
+  font-size: 0.9rem;
+  width: calc(50% - 5px);
+  height: 35px;
+  line-height: 35px;
+  background-color: #ECECEC;
+  border: none;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+main .sixth-section-container .sixth-section .left-box form input::-moz-placeholder, main .sixth-section-container .sixth-section .left-box form textarea::-moz-placeholder {
+  color: #C0C3D1;
+  font-size: 0.9rem;
+  font-family: "Montserrat";
+  font-size: 0.8rem;
+}
+
+main .sixth-section-container .sixth-section .left-box form input:-ms-input-placeholder, main .sixth-section-container .sixth-section .left-box form textarea:-ms-input-placeholder {
+  color: #C0C3D1;
+  font-size: 0.9rem;
+  font-family: "Montserrat";
+  font-size: 0.8rem;
+}
+
+main .sixth-section-container .sixth-section .left-box form input::placeholder, main .sixth-section-container .sixth-section .left-box form textarea::placeholder {
+  color: #C0C3D1;
+  font-size: 0.9rem;
+  font-family: "Montserrat";
+  font-size: 0.8rem;
+}
+
+main .sixth-section-container .sixth-section .left-box form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #ECECEC;
+  border: none;
+}
+
+main .sixth-section-container .sixth-section .left-box form input[type="submit"] {
+  width: auto;
+}
+
+main .sixth-section-container .sixth-section .right-box {
+  width: 40%;
+  outline: 1px dotted lightblue;
+}
+

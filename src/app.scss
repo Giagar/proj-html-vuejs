@@ -661,4 +661,66 @@ main {
         }
 
     }
+
+    // sixth-section 
+    .sixth-section-container {
+
+        .sixth-section {
+            @include content-shrink;
+            display: flex;
+            outline: 1px dotted lightblue;
+
+            .left-box {
+                width: 60%;
+                outline: 1px dotted lightblue;
+
+                .section-description {
+                    @include normal-text;
+                    margin-bottom: 40px;
+                }
+
+                form {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+
+                    input:not([type="submit"]), select {
+                        @include normal-text;
+                        width: calc(50% - 5px);
+                        height: 35px;
+                        line-height: 35px;
+                        background-color: #ECECEC;
+                        border: none;
+                        padding-left: $space-between-section-elements;
+                        margin-bottom: $space-between-section-elements;
+                    }
+                    
+                    input::placeholder, textarea::placeholder {
+                        @include normal-text;
+                        font-family: "Montserrat";
+                        font-size: 0.8rem;
+                    }
+                    
+                    textarea {
+                        width: 100%;
+                        padding: $space-between-section-elements;
+                        margin-bottom: 20px;
+                        background-color: #ECECEC;
+                        border: none;
+                    }
+
+                    input[type="submit"] {
+                        width: auto;
+                    }
+                }
+
+            }
+
+            .right-box {
+                width: 40%;
+                outline: 1px dotted lightblue;
+            }
+
+        }
+    }
 }
