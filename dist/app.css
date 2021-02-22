@@ -32,7 +32,7 @@ section {
 }
 
 .description-sentence {
-  color: #028484;
+  color: #41c457;
   font-size: 0.8rem;
   font-weight: 500;
   margin-bottom: 10px;
@@ -59,13 +59,13 @@ h3.subsection-title {
 
 .btn.full {
   color: white;
-  background-color: #028484;
-  border: 1px solid #028484;
+  background-color: #41c457;
+  border: 1px solid #41c457;
 }
 
 .btn.empty {
   color: white;
-  border: 1px solid #028484;
+  border: 1px solid #41c457;
   background-color: transparent;
 }
 
@@ -84,7 +84,7 @@ h3.subsection-title {
 .highlighted-text {
   padding: 5px 10px;
   background-color: #DAECED;
-  color: #028484;
+  color: #41c457;
 }
 
 .highlighted-onlyBackground-text {
@@ -167,7 +167,7 @@ header .header-content .header-nav-container .logo-container .logo::after {
   content: "";
   display: block;
   position: absolute;
-  background-color: #028484;
+  background-color: #41c457;
   opacity: 0.5;
   width: 4.2em;
   height: 2.1em;
@@ -364,11 +364,11 @@ main .second-section-container .second-section .services-container .service .img
 
 main .second-section-container .second-section .services-container .service .img-container .icon-circle i:first-child {
   font-size: 20px;
-  color: #028484;
+  color: #41c457;
 }
 
 main .second-section-container .second-section .services-container .service .img-container .arrow {
-  color: #028484;
+  color: #41c457;
 }
 
 main .second-section-container .second-section .services-container .service .subsection-title {
@@ -435,7 +435,7 @@ main .third-section-container .third-section .procedures-container .procedure .n
   text-align: center;
   font-size: 1rem;
   font-weight: 600;
-  color: #028484;
+  color: #41c457;
 }
 
 main .third-section-container .third-section .procedures-container .procedure .subsection-title {
@@ -481,7 +481,7 @@ main .fourth-section-container .fourth-section .results-container ul li {
 }
 
 main .fourth-section-container .fourth-section .results-container ul li .number {
-  color: #028484;
+  color: #41c457;
   margin-bottom: 10px;
   font-size: 2rem;
   font-weight: 600;
