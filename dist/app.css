@@ -561,12 +561,10 @@ main .sixth-section-container .sixth-section {
   width: 1000px;
   margin: 0 auto;
   display: flex;
-  outline: 1px dotted lightblue;
 }
 
 main .sixth-section-container .sixth-section .left-box {
   width: 60%;
-  outline: 1px dotted lightblue;
 }
 
 main .sixth-section-container .sixth-section .left-box .section-description {
@@ -628,6 +626,34 @@ main .sixth-section-container .sixth-section .left-box form input[type="submit"]
 
 main .sixth-section-container .sixth-section .right-box {
   width: 40%;
-  outline: 1px dotted lightblue;
+  padding-left: 30px;
+}
+
+main .sixth-section-container .sixth-section .right-box p {
+  color: #C0C3D1;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+main .sixth-section-container .sixth-section .right-box .contacts-container {
+  color: #C0C3D1;
+  font-size: 0.9rem;
+  color: #41c457;
+}
+
+main .sixth-section-container .sixth-section .right-box .contacts-container .icon-container {
+  background-color: #DAECED;
+  display: inline-block;
+  height: 36px;
+  line-height: 36px;
+  width: 36px;
+  text-align: center;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+main .sixth-section-container .sixth-section .right-box button.map {
+  margin-top: 10px;
+  color: #41c457;
 }
 

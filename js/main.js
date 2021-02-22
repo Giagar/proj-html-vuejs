@@ -9,6 +9,7 @@ new Vue({
         headerContacts: {
             tel: "+1 (305) 1234-5678", // ?? va bene o array con icona e dato?
             email: "hello@example.com",
+            address: "Main Avenue, 987",
             facebook: "facebook",
             twitter: "twitter",
             linkedin: "linkedin",    

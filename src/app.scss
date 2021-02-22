@@ -668,12 +668,10 @@ main {
         .sixth-section {
             @include content-shrink;
             display: flex;
-            outline: 1px dotted lightblue;
-
+            
             .left-box {
                 width: 60%;
-                outline: 1px dotted lightblue;
-
+                
                 .section-description {
                     @include normal-text;
                     margin-bottom: 40px;
@@ -718,7 +716,37 @@ main {
 
             .right-box {
                 width: 40%;
-                outline: 1px dotted lightblue;
+                padding-left: 30px;
+                
+                p {
+                    @include normal-text;
+                    margin-top: $space-between-section-elements;
+                }
+
+                .contacts-container {
+                    @include normal-text;
+                    color: $secondary-mid-color;
+
+                    .icon-container {
+                        background-color: $secondary-light-color;
+                        display: inline-block;
+                        height: 36px;
+                        line-height: 36px;
+                        width: 36px;
+                        text-align: center;
+                        border-radius: 50%;
+                        margin-top: $space-between-section-elements;
+                    }
+                }
+
+                button.map {
+                    margin-top: $space-between-section-elements;
+                    color: $secondary-mid-color;
+                }
+
+
+
+
             }
 
         }
