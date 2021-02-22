@@ -27,6 +27,9 @@ $secondary-mid-color: #41c457; // #028484;
 $complementary-secondary-mid-color: #FFFFFF;
 $secondary-dark-color: rgba(2, 132, 132, 0.3);
 
+$primary-font-size: 0.9rem;
+$small-font-size: 0.8rem;
+
 // layout
 $background-light-color: white; 
 $background-dark-primary-color: #121117; 
@@ -52,14 +55,14 @@ $horizontal-nav-li-distance: 30px;
 
 // @mixin description-style {
 //     color: $secondary-mid-color;
-//     font-size: 0.8rem;
+//     font-size: $small-font-size;
 //     font-weight: 500;
 //     margin-bottom: $space-between-section-elements;
 // }
 
 @mixin normal-text {
     color: $primary-dark-color;
-    font-size: 0.9rem;
+    font-size: $primary-font-size;
 }
 
 
@@ -81,7 +84,7 @@ section, .section {
 
 .description-sentence {
     color: $secondary-mid-color;
-    font-size: 0.8rem;
+    font-size: $small-font-size;
     font-weight: 500;
     margin-bottom: $space-between-section-elements;
     text-transform: uppercase;
@@ -100,7 +103,7 @@ h3.subsection-title {
 
 .btn {
     padding: 9px 17px;
-    font-size: 0.8rem;
+    font-size: $small-font-size;
     border-radius: 4px;
     text-transform: uppercase;
 }
@@ -184,7 +187,7 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        font-size: 0.8rem;
+        font-size: $small-font-size;
         
         .contact-nav {
             width: 60%;
@@ -264,7 +267,7 @@ header {
 
                 ul {
                     @include horizontal-ul;
-                    font-size: 0.9rem;
+                    font-size: $primary-font-size;
                     font-weight: 500;
                     height: 70px;
 
@@ -390,7 +393,7 @@ main {
                             }
 
                             .charateristics {
-                                font-size: 0.8rem;
+                                font-size: $small-font-size;
                                 color: $primary-dark-color;
                             }
                         }
@@ -724,7 +727,7 @@ main {
                     input::placeholder, textarea::placeholder {
                         @include normal-text;
                         font-family: "Montserrat";
-                        font-size: 0.8rem;
+                        font-size: $small-font-size;
                     }
                     
                     textarea {
@@ -781,74 +784,114 @@ main {
         }
     }
 
-    footer {
-        background-color: $background-dark-primary-color;
-        color: white;
+}
 
-        .footer-top {
-            @include content-shrink;
+footer {
+    background-color: $background-dark-primary-color;
+    color: white;
+
+    .footer-top {
+        @include content-shrink;
+        display: flex;
+        justify-content: space-between;
+
+        .card {
+            width: 22%;
+        }
+
+        .card:first-child {
+            @include normal-text;
             display: flex;
+            flex-direction: column;
             justify-content: space-between;
 
-            .card {
-                width: 22%;
+            .description {
+                margin-top: 20px;
             }
 
-            .card:first-child {
-                @include normal-text;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
+            ul {
+                list-style: none;
+                margin: 20px 0;
 
-                .description {
-                    margin-top: 20px;
-                }
+                li {
+                    display: flex;
+                    margin-bottom: $space-between-section-elements;
 
-                ul {
-                    list-style: none;
-                    margin: 20px 0;
-
-                    li {
-                        display: flex;
-                        margin-bottom: $space-between-section-elements;
-
-                        i {
-                            margin-right: $space-between-section-elements;
-                        }
-                    }
-
-                    li:last-child {
-                        margin-bottom: 0;
+                    i {
+                        margin-right: $space-between-section-elements;
                     }
                 }
 
+                li:last-child {
+                    margin-bottom: 0;
+                }
             }
 
-            .card:not(:first-child) {
-                padding: 35px;
-                background-color: $background-dark-secondary-color;
-                border-radius: 6px;
+        }
 
-                .subsection-title {
+        .card:not(:first-child) {
+            padding: 35px;
+            background-color: $background-dark-secondary-color;
+            border-radius: 6px;
+
+            .subsection-title {
+                margin-bottom: $space-between-section-elements;
+            }
+            
+            ul {
+                list-style: none;
+                
+                li {
+                    @include normal-text;
                     margin-bottom: $space-between-section-elements;
                 }
-                
-                ul {
-                    list-style: none;
-                    
-                    li {
-                        @include normal-text;
-                        margin-bottom: $space-between-section-elements;
-                    }
 
-                    li:last-child {
-                        margin-bottom: 0;
-                    }
+                li:last-child {
+                    margin-bottom: 0;
                 }
             }
-
-            
         }
 
     }
+
+    .footer-bottom-container {
+        background-color: #0D0D11;
+        position: relative;
+        
+        .footer-bottom {
+            @include content-shrink;
+            color: $primary-dark-color;
+            font-size: $small-font-size;
+            display: flex;
+            justify-content: space-between;
+            height: 60px;
+            line-height: 60px;
+    
+            .copyright {
+    
+                span {
+                    color: $secondary-mid-color;
+                }
+            }
+    
+            .goTop {
+                position: absolute;
+                right: $space-between-section-elements;
+                width: 36px;
+                height: 36px;
+                line-height: 36px;
+                text-align: center;
+                border-radius: 50%;
+                background-color: $background-dark-secondary-color;
+                top: 50%;
+                transform: translateY(-50%);
+
+                i {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+
 }
