@@ -1,22 +1,10 @@
 /* TO DO 
 _adding a bigger space-between among vars?
 _credits for gem font-awesome image
-_space between certifications title and images
-_change tag section in .section here in css and add section to html classes
+_condense contacts and headerContacts in js
+_add partials (@import _colors, _mixins)
 _refactoring
 */
-
-/* $var
-var: $primary-light-color: white, $primary-dark-color:grey, $secondary-light-color§:lightwatergreen, $secondary-mid-color:weatergreen
-var: $background-light-color, $background-dark-primary-color, $background-dark-secondary-color 
-var: $page-elements
-*/
-
-/* @mixin
-content{max-w:, mg: auto} // one each section
-*/
-
-// font: montserrat (similar)
 
 /* VAR & MIXINS */
 // text and buttons
@@ -35,34 +23,31 @@ $background-light-color: white;
 $background-dark-primary-color: #121117; 
 $background-dark-secondary-color: #191C1E; // !! secondo me è #19191F
 
-$space-between-section-elements: 10px;
+$space-between-section-elements: 15px;
 
 // others
 $horizontal-nav-li-distance: 30px;
 
-// max width and centering of the content
-@mixin content-shrink {
+@mixin content-shrink { // max width and centering of the content
     width: 1000px;
     margin: 0 auto;
 }
 
-// ul: no style and flex
-@mixin horizontal-ul {
+@mixin horizontal-ul { // ul: no style and flex
     list-style: none;
     display: flex;
     align-items: center;
 }
 
-// @mixin description-style {
-//     color: $secondary-mid-color;
-//     font-size: $small-font-size;
-//     font-weight: 500;
-//     margin-bottom: $space-between-section-elements;
-// }
-
 @mixin normal-text {
     color: $primary-dark-color;
     font-size: $primary-font-size;
+}
+
+@mixin card {
+    background-color: $background-dark-secondary-color;
+    padding: 35px;
+    border-radius: 6px;
 }
 
 
@@ -78,7 +63,7 @@ html {
     padding: 0;
 }
 
-section, .section {
+.section {
     padding: 90px 0;
 }
 
@@ -91,6 +76,7 @@ section, .section {
 }
 
 h2.section-title {
+    font-family: "Montserrat", sans-serif;
     font-size: 2rem;
     font-weight: 800;
     margin: 15px 0;
@@ -220,10 +206,6 @@ header {
             width: 100%;
             height: 100%;
             background: rgba(0, 0, 0, 0.6);
-            // top: 0;
-            // left: 0;
-            // position: absolute;
-            // z-index: 0;
         }
 
         .header-nav-container {
@@ -237,34 +219,6 @@ header {
             .logo-container {
                 display: flex;
                 align-items: center;
-
-                // // _LOGO
-                // .logo {
-                //     text-transform: uppercase;
-                //     height: 2.1em;
-                //     width: 8.8em;
-                //     line-height: 2.1em;
-                //     text-align: center;
-                //     letter-spacing: 0.3em;
-                //     font-weight: 600;
-                //     position: relative;
-                //     font-size: 1rem;
-                // }
-
-                // .logo::after {
-                //     content: "";
-                //     display: block;
-                //     position: absolute;
-                //     background-color: $secondary-mid-color;
-                //     opacity: 0.5;
-                //     width: 4.2em;
-                //     height: 2.1em;
-                //     border-top-left-radius: 50px;
-                //     border-bottom-left-radius: 50px;
-                //     bottom: 0;
-                //     left: 0;
-                // }
-                // // _/LOGO
             }
 
             .header-nav {
@@ -286,10 +240,6 @@ header {
             @include content-shrink;
             margin-top: 90px;
 
-            .description {
-                // @include description-style;
-            }
-
             .title {
                 font-family: 'Roboto', sans-serif;
                 color: $primary-light-color;
@@ -309,7 +259,6 @@ header {
 
     }
     // _/header-content
-
 }
 
 // _main
@@ -327,15 +276,6 @@ main {
         .who.left-box {
             width: 60%;
 
-            // h2.section-title::before {
-            //     content: url('../img/gem-regular.svg');
-            //     width: 10px !important;
-            // }
-
-            .description {
-                // @include description-style;
-            }
-
             .text-container {
                 
                 p, .quote {
@@ -344,7 +284,7 @@ main {
                 }
                 
                 .quote {
-                    padding: 10px 35px 10px 25px;
+                    padding: 10px 25px 10px 25px;
                     border-left: 3px solid $secondary-light-color;
                     font-style: italic;
                 }
@@ -356,11 +296,8 @@ main {
                     li {
                         padding: 2px 0;
                     }
-
-
                 }
             }
-
         }
 
         // _right-box
@@ -381,7 +318,6 @@ main {
                             background-color: $secondary-light-color;
                             width: 70px;
                             padding: 5px;
-                            // height: 35px;
                         }
 
                         .container {
@@ -411,10 +347,11 @@ main {
 
             // _certifications
             .certifications {
-                margin-top: 50px;
+                margin-top: 30px;
 
                 .certifications-container {
                     display: flex;
+                    margin-top: $space-between-section-elements;
 
                     .img-container {
                         width: 100px;
@@ -427,8 +364,7 @@ main {
                             width: 100%;
                             text-align: center;
                         }
-                    }
-                    
+                    }                    
                 }
             }
         }
@@ -442,17 +378,9 @@ main {
         .second-section {
             @include content-shrink;
 
-            div.description {
-                // @include description-style;
-            }
-
             h2.section-title {
                 color: $primary-light-color;
 
-                // span {
-                //     color: $primary-light-color;
-                //     background-color: $secondary-dark-color;
-                // }
             }
 
             .text-container {
@@ -472,9 +400,7 @@ main {
                 padding: 15px 0;
 
                 .service {
-                    background-color: $background-dark-secondary-color;
-                    padding: 35px;
-                    border-radius: 6px;
+                    @include card;
                     width: 32%;
 
                     .img-container {
@@ -580,10 +506,7 @@ main {
                     .subsection-text {
                         @include normal-text;
                     }
-
-
                 }
-
             }
         }
     }
@@ -624,8 +547,6 @@ main {
                     }
                 }
             }
-
-
         }
     }
 
@@ -655,9 +576,7 @@ main {
                 padding: 15px 0;
 
                 .feed {
-                    background-color: $background-dark-secondary-color;
-                    padding: 35px;
-                    border-radius: 6px;
+                    @include card;
                     width: 32%;
 
                     .img-container {
@@ -674,7 +593,6 @@ main {
                     .subsection-text {
                         @include normal-text;
                         text-align: left;
-                        // color: $primary-dark-color;
                     }
 
                     .quote {
@@ -689,12 +607,9 @@ main {
                             font-size: 1.2rem;
                         }
                     }
-
                 }
-
             }
         }
-
     }
 
     // sixth-section 
@@ -747,7 +662,6 @@ main {
                         width: auto;
                     }
                 }
-
             }
 
             .right-box {
@@ -779,15 +693,9 @@ main {
                     margin-top: $space-between-section-elements;
                     color: $secondary-mid-color;
                 }
-
-
-
-
             }
-
         }
     }
-
 }
 
 footer {
@@ -834,9 +742,7 @@ footer {
         }
 
         .card:not(:first-child) {
-            padding: 35px;
-            background-color: $background-dark-secondary-color;
-            border-radius: 6px;
+            @include card;
 
             .subsection-title {
                 margin-bottom: $space-between-section-elements;
@@ -855,7 +761,6 @@ footer {
                 }
             }
         }
-
     }
 
     .footer-bottom-container {
@@ -897,6 +802,4 @@ footer {
             }
         }
     }
-
-
 }

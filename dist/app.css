@@ -1,18 +1,9 @@
-@charset "UTF-8";
 /* TO DO 
 _adding a bigger space-between among vars?
 _credits for gem font-awesome image
-_space between certifications title and images
-_change tag section in .section here in css and add section to html classes
+_condense contacts and headerContacts in js
+_add partials (@import _colors, _mixins)
 _refactoring
-*/
-/* $var
-var: $primary-light-color: white, $primary-dark-color:grey, $secondary-light-color§:lightwatergreen, $secondary-mid-color:weatergreen
-var: $background-light-color, $background-dark-primary-color, $background-dark-secondary-color 
-var: $page-elements
-*/
-/* @mixin
-content{max-w:, mg: auto} // one each section
 */
 /* VAR & MIXINS */
 /* COMMON & UTILITIES */
@@ -27,7 +18,7 @@ html {
   padding: 0;
 }
 
-section, .section {
+.section {
   padding: 90px 0;
 }
 
@@ -35,11 +26,12 @@ section, .section {
   color: #41c457;
   font-size: 0.8rem;
   font-weight: 500;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   text-transform: uppercase;
 }
 
 h2.section-title {
+  font-family: "Montserrat", sans-serif;
   font-size: 2rem;
   font-weight: 800;
   margin: 15px 0;
@@ -234,11 +226,11 @@ main .first-section .who.left-box {
 main .first-section .who.left-box .text-container p, main .first-section .who.left-box .text-container .quote {
   color: #C0C3D1;
   font-size: 0.9rem;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 main .first-section .who.left-box .text-container .quote {
-  padding: 10px 35px 10px 25px;
+  padding: 10px 25px 10px 25px;
   border-left: 3px solid #DAECED;
   font-style: italic;
 }
@@ -292,11 +284,12 @@ main .first-section .right-box .vehicles ul li:last-child {
 }
 
 main .first-section .right-box .certifications {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 main .first-section .right-box .certifications .certifications-container {
   display: flex;
+  margin-top: 15px;
 }
 
 main .first-section .right-box .certifications .certifications-container .img-container {
@@ -334,7 +327,7 @@ main .second-section-container .second-section .text-container {
 
 main .second-section-container .second-section .text-container .services-text {
   width: 75%;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 main .second-section-container .second-section .services-container {
@@ -353,12 +346,12 @@ main .second-section-container .second-section .services-container .service {
 main .second-section-container .second-section .services-container .service .img-container {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 main .second-section-container .second-section .services-container .service .img-container .icon-circle {
   background-color: rgba(2, 132, 132, 0.3);
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   border-radius: 50%;
   height: 40px;
   width: 40px;
@@ -377,7 +370,7 @@ main .second-section-container .second-section .services-container .service .img
 
 main .second-section-container .second-section .services-container .service .subsection-title {
   color: white;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 main .second-section-container .second-section .services-container .service .subsection-text {
@@ -407,7 +400,7 @@ main .third-section-container .third-section {
 
 main .third-section-container .third-section .description-container {
   width: 800px;
-  margin: 0 auto 10px;
+  margin: 0 auto 15px;
   text-align: center;
 }
 
@@ -443,8 +436,8 @@ main .third-section-container .third-section .procedures-container .procedure .n
 }
 
 main .third-section-container .third-section .procedures-container .procedure .subsection-title {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -486,7 +479,7 @@ main .fourth-section-container .fourth-section .results-container ul li {
 
 main .fourth-section-container .fourth-section .results-container ul li .number {
   color: #41c457;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   font-size: 2rem;
   font-weight: 600;
 }
@@ -515,7 +508,7 @@ main .fifth-section-container .fifth-section .description-text {
   width: 700px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 main .fifth-section-container .fifth-section .feedback-container {
@@ -532,7 +525,7 @@ main .fifth-section-container .fifth-section .feedback-container .feed {
 }
 
 main .fifth-section-container .fifth-section .feedback-container .feed .img-container {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   width: 100px;
 }
 
@@ -591,8 +584,8 @@ main .sixth-section-container .sixth-section .left-box form input:not([type="sub
   line-height: 35px;
   background-color: #ECECEC;
   border: none;
-  padding-left: 10px;
-  margin-bottom: 10px;
+  padding-left: 15px;
+  margin-bottom: 15px;
 }
 
 main .sixth-section-container .sixth-section .left-box form input::-moz-placeholder, main .sixth-section-container .sixth-section .left-box form textarea::-moz-placeholder {
@@ -618,7 +611,7 @@ main .sixth-section-container .sixth-section .left-box form input::placeholder, 
 
 main .sixth-section-container .sixth-section .left-box form textarea {
   width: 100%;
-  padding: 10px;
+  padding: 15px;
   margin-bottom: 20px;
   background-color: #ECECEC;
   border: none;
@@ -637,7 +630,7 @@ main .sixth-section-container .sixth-section .right-box {
 main .sixth-section-container .sixth-section .right-box p {
   color: #C0C3D1;
   font-size: 0.9rem;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 main .sixth-section-container .sixth-section .right-box .contacts-container {
@@ -654,11 +647,11 @@ main .sixth-section-container .sixth-section .right-box .contacts-container .ico
   width: 36px;
   text-align: center;
   border-radius: 50%;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 main .sixth-section-container .sixth-section .right-box button.map {
-  margin-top: 10px;
+  margin-top: 15px;
   color: #41c457;
 }
 
@@ -697,11 +690,11 @@ footer .footer-top .card:first-child ul {
 
 footer .footer-top .card:first-child ul li {
   display: flex;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 footer .footer-top .card:first-child ul li i {
-  margin-right: 10px;
+  margin-right: 15px;
 }
 
 footer .footer-top .card:first-child ul li:last-child {
@@ -709,13 +702,13 @@ footer .footer-top .card:first-child ul li:last-child {
 }
 
 footer .footer-top .card:not(:first-child) {
-  padding: 35px;
   background-color: #191C1E;
+  padding: 35px;
   border-radius: 6px;
 }
 
 footer .footer-top .card:not(:first-child) .subsection-title {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 footer .footer-top .card:not(:first-child) ul {
@@ -725,7 +718,7 @@ footer .footer-top .card:not(:first-child) ul {
 footer .footer-top .card:not(:first-child) ul li {
   color: #C0C3D1;
   font-size: 0.9rem;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 footer .footer-top .card:not(:first-child) ul li:last-child {

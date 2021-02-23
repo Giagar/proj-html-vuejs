@@ -15,7 +15,7 @@
     <div id="root" class="wrapper">
 
       
-        <!-- header (@mx content{max-w:, mg: auto}) -->
+        <!-- header -->
         <header>
             <!-- .info-container -->
             <div class="info-container">
@@ -26,10 +26,6 @@
                     </div>
 
                     <nav class="contact-nav">
-<!-- ?? flex non viene applicato al contenuto dinamico -->
-                        <!-- <ul>
-                            <li v-for="item in headerContacts">{{item}}</li>
-                        </ul> -->
                         <ul>
                             <li>
                                 <i class="fas fa-phone-alt"></i> 
@@ -77,7 +73,7 @@
                         </nav>
                     </div>
 
-                    <!-- .header-main (display:flex; j-c: flex-start) -->
+                    <!-- .header-main -->
                     <div class="header-main">
                         <div class="description-sentence">logistic services</div>
                         <h1 class="title uppercase">cargo<br>transport</h1>
@@ -95,7 +91,7 @@
         <main>
             <!-- first section -->
             <div class="first-section-container">
-                <section class="first-section">
+                <section class="section first-section">
                     <!-- left-box -->
                     <div class="who left-box">
                         <div class="description-sentence">who we are</div>
@@ -103,8 +99,7 @@
                         <div class="text-container">
                             <p class="first-text-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. voluptates fuga voluptate, esse quisquam eaque repellat aspernatur architecto obcaecati ad.</p>
                             <p class="second-text--content">Maxime, officiis dolores. Quis corrupti officiis, atque ea cum esse reprehenderit rem porro, voluptates autem non, quod quos illo facilis id accusamus.</p>
-<!-- !! cerca tag + appropriato x citazione -->
-                            <p class="quote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, minima libero nulla rem accusantium, officiis ipsa aliquid laudantium.</p>
+                            <blockquote class="quote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, minima libero nulla rem accusantium, officiis ipsa aliquid laudantium.</blockquote>
                             <p class="third-text-content">Quae assumenda nesciunt dolorum quis nam.</p>
                             <ul>
                                 <li>Lorem ipsum dolor sit amet</li>
@@ -147,7 +142,7 @@
 
             <!-- second section -->
             <div class="second-section-container">
-                <section class="second-section">
+                <section class="section second-section">
 
                     <!-- description and title -->
                     <div class="description-sentence">road transport</div>
@@ -177,7 +172,7 @@
             <!-- third section -->
             <div class="third-section-container">
                 <div class="line"></div>
-                <section class="third-section">
+                <section class="section third-section">
                     
                     <!-- description -->
                     <div class="description-container">
@@ -201,7 +196,7 @@
 
             <!-- fourth-section -->
             <div class="fourth-section-container">
-                <section class="fourth-section">
+                <section class="section fourth-section">
                     <div class="description-sentence">what are we doing</div>
                     <h2 class="section-title"><span class="highlighted-onlyBackground-text">Results</span> in Numbers</h2>
                     <div class="results-container">
@@ -217,7 +212,7 @@
 
             <!-- fifth-section -->
             <div class="fifth-section-container">
-                <section class="fifth-section">
+                <section class="section fifth-section">
 
                     <!-- description and title -->
                     <div class="description-sentence">customer testimonials</div>
@@ -243,7 +238,7 @@
 
             <!-- sixth section -->
             <div class="sixth-section-container">
-                <section class="sixth-section">
+                <section class="section sixth-section">
 
                     <!-- left-box -->
                     <div class="left-box">
@@ -298,6 +293,8 @@
 
             <!-- footer -->
             <footer>
+
+                <!-- footer-top -->
                 <div class="footer-top section">
 
                     <!-- first card -->
@@ -338,9 +335,9 @@
                         </ul>
                     </div>
                     
-
                 </div>
 
+                <!-- footer-bottom -->
                 <div class="footer-bottom-container">
                     <div class="footer-bottom">
                         <div class="piracy">Enjoy the low price. We are tracking any intention of piracy.</div>
@@ -351,31 +348,6 @@
                     </div>
                 </div>
             </footer>
-
-         
-
-
-
-
-
-                    
-                    
-                
-
-
-      
-                
-
-
-
-                        <!-- notes: 
-                            _all h2 with span inside
-                            _regular space between h2 and description in each section
-                        -->
-            
-
-
-
     </div>
     
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
