@@ -14,10 +14,10 @@
 
     <div id="root" class="wrapper">
 
-      
         <!-- header -->
         <header>
-            <!-- .info-container -->
+
+            <!-- info-container -->
             <div class="info-container">
                 <div class="info-content">
                     <div class="open">
@@ -43,7 +43,7 @@
                 </div>
             </div>
             
-            <!-- .header-content -->
+            <!-- header-content -->
             <div class="header-content">
                 <div class="header-overlay">
                     
@@ -53,10 +53,12 @@
                             <div class="logo">nexgen</div>
                         </div>
 
-                        <!-- .header-nav -->
+                        <!-- header-nav -->
                         <nav class="header-nav uppercase">
                             <ul >
-                                <li v-for="item in headerContentNav">{{item}}</li>
+                                <li v-for="item in headerContentNav">
+                                    {{item}}
+                                </li>
                                 <li>
                                     <i class="far fa-user"></i>
                                 </li>
@@ -67,7 +69,7 @@
                         </nav>
                     </div>
 
-                    <!-- .header-main -->
+                    <!-- header-main -->
                     <div class="header-main">
                         <div class="description-sentence">logistic services</div>
                         <h1 class="title uppercase">cargo<br>transport</h1>
@@ -86,6 +88,7 @@
             <!-- first section -->
             <div class="first-section-container">
                 <section class="section first-section">
+
                     <!-- left-box -->
                     <div class="who left-box">
                         <div class="description-sentence">who we are</div>
@@ -107,6 +110,7 @@
     
                     <!-- right-box -->
                     <div class="right-box capitalize">
+
                         <!-- vehicles -->
                         <div class="vehicles">
                             <h3 class="subsection-title">Vehicle Types</h3>
@@ -288,6 +292,7 @@
 
                     <!-- first card -->
                     <div class="card">
+                        
                         <!-- logo -->
                         <div class="logo-container">
                             <div class="logo">nexgen</div>
@@ -299,10 +304,12 @@
                             <!-- contacts -->
                             <ul class="contacts">
                                 <li v-for="contact in contacts">
+
                                     <!-- logo -->
                                     <div class="icon-container">
                                         <i :class="contact.icon"></i>
                                     </div>
+                                    
                                     <span :class="contact.type">{{contact.content}}</span>
                                 </li>
                             </ul>

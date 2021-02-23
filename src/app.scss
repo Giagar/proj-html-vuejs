@@ -1,38 +1,28 @@
-/* TO DO 
-_adding a bigger space-between among vars?
-_add partials (@import _colors, _mixins)
-_refactoring
-*/
-
 /* CREDITS
 The image of the gem comes from the website
  https://fontawesome.com/icons/gem?style=regular 
  and it is released under CC BY 4.0.
 */
 
+
+/* IMPORTS */
+@import "partials/colors";
+
+
 /* VAR & MIXINS */
 // text and buttons
-$primary-light-color: white; 
-$primary-dark-color: #C0C3D1; 
-$secondary-light-color: #DAECED;
-$secondary-mid-color: #41c457;
-$complementary-secondary-mid-color: #FFFFFF;
-$secondary-dark-color: rgba(2, 132, 132, 0.3);
-
 $primary-font-size: 0.9rem;
 $small-font-size: 0.8rem;
 
 // layout
 $desktop-width: 1200px;
 
+$space-between-section-elements: 15px;
+$horizontal-nav-li-distance: 30px;
+
 $background-light-color: white; 
 $background-dark-primary-color: #121117; 
 $background-dark-secondary-color: #191C1E;
-
-$space-between-section-elements: 15px;
-
-// others
-$horizontal-nav-li-distance: 30px;
 
 @mixin content-shrink { // max width and centering of the content
     width: 1000px;
@@ -199,7 +189,6 @@ header {
             }
         }
     }
-    // _/info-content
 
     // _header-content
     .header-content {
@@ -264,7 +253,6 @@ header {
         }
 
     }
-    // _/header-content
 }
 
 // _main
@@ -374,7 +362,6 @@ main {
                 }
             }
         }
-
     }
 
     // _second-section
@@ -444,13 +431,11 @@ main {
                         color: $primary-dark-color;
                     }
                 }
-
             }
         }
-
     }
 
-    // third-section
+    // _third-section
     .third-section-container {
         background-color: #EFF4EE;
         position: relative;
@@ -517,7 +502,7 @@ main {
         }
     }
 
-    // fourth section
+    // _fourth section
     .fourth-section-container {
         background: url("../img/bg-10.jpg") no-repeat center;
         background-size: cover;
@@ -618,7 +603,7 @@ main {
         }
     }
 
-    // sixth-section 
+    // _sixth-section 
     .sixth-section-container {
 
         .sixth-section {
@@ -694,6 +679,7 @@ main {
                             width: 36px;
                             text-align: center;
                             border-radius: 50%;
+                            margin-right: 5px;
                         }
                     }
                 }
@@ -707,10 +693,12 @@ main {
     }
 }
 
+// _footer
 footer {
     background-color: $background-dark-primary-color;
     color: white;
 
+    // _footer-top
     .footer-top {
         @include content-shrink;
         display: flex;
@@ -747,7 +735,6 @@ footer {
                     margin-bottom: 0;
                 }
             }
-
         }
 
         .card:not(:first-child) {
@@ -772,6 +759,7 @@ footer {
         }
     }
 
+    // _footer-bottom
     .footer-bottom-container {
         background-color: #0D0D11;
         position: relative;

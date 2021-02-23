@@ -1,13 +1,9 @@
-/* TO DO 
-_adding a bigger space-between among vars?
-_add partials (@import _colors, _mixins)
-_refactoring
-*/
 /* CREDITS
 The image of the gem comes from the website
  https://fontawesome.com/icons/gem?style=regular 
  and it is released under CC BY 4.0.
 */
+/* IMPORTS */
 /* VAR & MIXINS */
 /* COMMON & UTILITIES */
 html {
@@ -654,6 +650,7 @@ main .sixth-section-container .sixth-section .right-box .contacts-container .con
   width: 36px;
   text-align: center;
   border-radius: 50%;
+  margin-right: 5px;
 }
 
 main .sixth-section-container .sixth-section .right-box button.map {
