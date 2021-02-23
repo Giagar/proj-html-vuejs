@@ -6,14 +6,43 @@ new Vue({
             days: "Mon - Sat",
         }, 
 
-        headerContacts: {
-            tel: "+1 (305) 1234-5678", // ?? va bene o array con icona e dato?
-            email: "hello@example.com",
-            address: "Main Avenue, 987",
-            facebook: "facebook",
-            twitter: "twitter",
-            linkedin: "linkedin",    
-        },
+        contacts: [
+            {
+                type: "tel",
+                icon: "fas fa-phone-alt",
+                content: "+1 (305) 1234-5678",
+            },
+
+            {
+                type: "email",
+                icon: "fas fa-envelope",
+                content: "hello@example.com",            
+            },
+
+            {
+                type: "address",
+                icon: "fas fa-map-marker-alt",
+                content: "Main Avenue, 987",                       
+            },
+
+        ],
+        
+        social: [
+            {
+                type: "facebook",
+                icon: "fab fa-facebook-f",
+            },
+
+            {
+                type: "twitter",
+                icon: "fab fa-twitter",
+            },
+
+            {
+                type: "twitter",
+                icon: "fab fa-linkedin-in",
+            },
+        ],
 
         headerContentNav: ["home", "about", "services", "process", "testimonials"],
 
@@ -163,27 +192,5 @@ new Vue({
                 }
             ]
         },
-
-        contacts: [
-            {
-                type: "tel",
-                icon: "fas fa-phone-alt",
-                content: "+1 (305) 1234-5678",
-            },
-
-            {
-                type: "email",
-                icon: "fas fa-envelope",
-                content: "hello@example.com",            
-            },
-
-            {
-                type: "address",
-                icon: "fas fa-map-marker-alt",
-                content: "Main Avenue, 987",                       
-            },
-
-        ]
-
     },
 })

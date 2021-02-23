@@ -1,6 +1,5 @@
 /* TO DO 
 _adding a bigger space-between among vars?
-_condense contacts and headerContacts in js
 _add partials (@import _colors, _mixins)
 _narrower width (wrapper min-w and procedures width)?
 _refactoring
@@ -683,15 +682,18 @@ main {
                     @include normal-text;
                     color: $secondary-mid-color;
 
-                    .icon-container {
-                        background-color: $secondary-light-color;
-                        display: inline-block;
-                        height: 36px;
-                        line-height: 36px;
-                        width: 36px;
-                        text-align: center;
-                        border-radius: 50%;
+                    .contact-wrapper {
                         margin-top: $space-between-section-elements;
+                        
+                        .icon-container {
+                            background-color: $secondary-light-color;
+                            display: inline-block;
+                            height: 36px;
+                            line-height: 36px;
+                            width: 36px;
+                            text-align: center;
+                            border-radius: 50%;
+                        }
                     }
                 }
 

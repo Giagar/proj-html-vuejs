@@ -28,21 +28,15 @@
                     <nav class="contact-nav">
                         <ul>
                             <li>
-                                <i class="fas fa-phone-alt"></i> 
-                                {{headerContacts.tel}}
+                                <i :class="contacts[0].icon"></i> 
+                                {{contacts[0].content}}
                             </li>
                             <li>
-                                <i class="fas fa-envelope"></i> 
-                                {{headerContacts.email}}
+                                <i :class="contacts[1].icon"></i> 
+                                {{contacts[1].content}}
                             </li>
-                            <li>
-                                <i class="fab fa-facebook-f"></i>
-                            </li>
-                            <li>
-                                <i class="fab fa-twitter"></i>
-                            </li>
-                            <li>
-                                <i class="fab fa-linkedin-in"></i>
+                            <li v-for="element in social">
+                                <i :class="element.icon"></i>
                             </li>
                         </ul>
                     </nav>
@@ -267,21 +261,16 @@
                         <p class="description-first">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <p class="descripiton-second">Inventore placeat aliquam laboriosam voluptatum provident.</p>
 
+                        <!-- contacts -->
                         <div class="contacts-container">
-                            <div class="icon-container">
-                                <i class="fas fa-phone-alt"></i> 
+
+                            <div class="contact-wrapper" v-for="contact in contacts">
+                                <div class="icon-container">
+                                    <i :class="contact.icon"></i> 
+                                </div>
+                                <span :class="contact.type">{{contact.content}}</span>
                             </div>
-                            <span class="phone">{{headerContacts.tel}}</span>
-                            <br>
-                            <div class="icon-container">
-                                <i class="fas fa-envelope"></i> 
-                            </div>
-                            <span class="email">{{headerContacts.email}}</span>
-                            <br>
-                            <div class="icon-container">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <span class="address">{{headerContacts.address}}</span>
+
                         </div>
 
                         <button class="map btn empty">view map</button>
@@ -314,7 +303,7 @@
                                     <div class="icon-container">
                                         <i :class="contact.icon"></i>
                                     </div>
-                                    <span class="address">{{contact.content}}</span>
+                                    <span :class="contact.type">{{contact.content}}</span>
                                 </li>
                             </ul>
 
