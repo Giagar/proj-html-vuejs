@@ -1,7 +1,6 @@
 /* TO DO 
 _adding a bigger space-between among vars?
 _add partials (@import _colors, _mixins)
-_narrower width (wrapper min-w and procedures width)?
 _refactoring
 */
 /* CREDITS
@@ -116,7 +115,7 @@ h3.subsection-title {
 
 /* STYLE */
 .wrapper {
-  min-width: 1400px;
+  min-width: 1200px;
 }
 
 header .info-container {
@@ -398,12 +397,12 @@ main .third-section-container .line {
 }
 
 main .third-section-container .third-section {
-  width: 1400px;
+  width: 1200px;
   margin: 0 auto;
 }
 
 main .third-section-container .third-section .description-container {
-  width: 800px;
+  width: 700px;
   margin: 0 auto 15px;
   text-align: center;
 }
@@ -420,7 +419,7 @@ main .third-section-container .third-section .procedures-container {
 }
 
 main .third-section-container .third-section .procedures-container .procedure {
-  width: 13%;
+  width: 14%;
   text-align: center;
 }
 
