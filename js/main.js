@@ -166,16 +166,19 @@ new Vue({
 
         contacts: [
             {
+                type: "tel",
                 icon: "fas fa-phone-alt",
                 content: "+1 (305) 1234-5678",
             },
 
             {
+                type: "email",
                 icon: "fas fa-envelope",
                 content: "hello@example.com",            
             },
 
             {
+                type: "address",
                 icon: "fas fa-map-marker-alt",
                 content: "Main Avenue, 987",                       
             },
